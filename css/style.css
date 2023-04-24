@@ -1,15 +1,15 @@
-body, 
-p, 
-h1, 
-ul, 
-li, 
+body,
+p,
+h1,
+ul,
+li,
 blockquote {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  font-family: 'Vollkorn',Georgia, serif;
+  font-family: 'Vollkorn', Georgia, serif;
 }
 
 li {
@@ -35,7 +35,7 @@ img {
     'footer footer footer';
 }
 
-/* HEADER */
+/*HEADER*/
 
 .header {
   grid-area: header;
@@ -48,11 +48,11 @@ img {
 
 .logo {
   max-width: 200px;
-  flex-wrap: wrap;
 }
 
 .header nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header nav a {
@@ -60,21 +60,41 @@ img {
   padding: 10px;
   color: white;
   font-size: 1.125em;
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .header nav a:hover {
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .header li + li {
-  margin-right: 30px;
+  margin-left: 30px;
 }
+
+/*SIDENAV*/
 
 .sidenav {
   grid-area: sidenav;
+  background: #fafbfc;
+  padding: 30px;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.1s ease-out;
+}
+
+.sidenav li a:hover {
+  background: #b07dfb;
 }
 
 .content {
@@ -88,4 +108,3 @@ img {
 .footer {
   grid-area: footer;
 }
-
